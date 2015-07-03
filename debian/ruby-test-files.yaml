@@ -1,0 +1,12 @@
+---
+- test/dummy/app/controllers/test_controller.rb
+- test/dummy/config/application.rb
+- test/dummy/config/boot.rb
+- test/dummy/config/environment.rb
+- test/dummy/config/initializers/secret_token.rb
+- test/dummy/config/initializers/session_store.rb
+- test/dummy/config/routes.rb
+- test/fixtures/session_autoload_test/session_autoload_test/foo.rb
+- test/integration/redis_store_integration_test.rb
+- test/redis/actionpack/version_test.rb
+- test/test_helper.rb

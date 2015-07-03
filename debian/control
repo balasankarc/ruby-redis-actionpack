@@ -1,0 +1,28 @@
+Source: ruby-redis-actionpack
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               ruby-actionpack (>= 4),
+               ruby-redis-rack (>= 1.5.0),
+               ruby-redis-store (>= 1.1.0)
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-redis-actionpack.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-redis-actionpack.git
+Homepage: http://redis-store.org/redis-actionpack
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-redis-actionpack
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-actionpack (>= 4),
+         ruby-redis-rack (>= 1.5.0),
+         ruby-redis-store (>= 1.1.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Redis session store for ActionPack
+ Redis session store for ActionPack
