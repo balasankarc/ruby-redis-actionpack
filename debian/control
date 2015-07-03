@@ -12,7 +12,6 @@ Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-redis-actionpack.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-redis-actionpack.git
 Homepage: http://redis-store.org/redis-actionpack
-Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
 Package: ruby-redis-actionpack
@@ -25,4 +24,8 @@ Depends: ruby | ruby-interpreter,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Redis session store for ActionPack
- Redis session store for ActionPack
+ The gem redis-actionpack provides a session store for ActionPack, specifically 
+ for ActionDispatch. Redis Store provides a full set of stores (Cache, I18n, 
+ Session, HTTP Cache) for modern Ruby frameworks like Ruby on Rails, Sinatra, 
+ Rack, Rack::Cache and I18n. It supports object marshalling, timeouts, single 
+ or multiple nodes, and namespaces.
